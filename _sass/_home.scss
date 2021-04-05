@@ -496,6 +496,9 @@
                 &:hover {
                   text-decoration: none !important;
                 }
+                &:active {
+                  text-decoration: none !important;
+                }
               }
             }
           }
@@ -656,6 +659,9 @@ section.dctsdk-work-flow.home {
       &:hover {
         text-decoration: none !important;
       }
+      &:active {
+        text-decoration: none !important;
+      }
     }
   }
 
@@ -684,6 +690,9 @@ section.dctsdk-work-flow.home {
     }
 
     &:hover {
+      text-decoration: none !important;
+    }
+    &:active {
       text-decoration: none !important;
     }
   }
@@ -909,6 +918,9 @@ section.home-use-case-blade {
         .button-link {
           text-decoration: none;
           &:hover {
+            text-decoration: none !important;
+          }
+          &:active {
             text-decoration: none !important;
           }
         }
