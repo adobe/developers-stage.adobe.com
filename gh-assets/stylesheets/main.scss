@@ -1,5 +1,5 @@
 ---
---- 
+---
 $black: #000;
 $blue: #0D66D0;
 $white: #fff;
@@ -27,6 +27,10 @@ $baseurl: "{{ site.baseurl }}";
 
 body {
   font-family: 'Adobe Clean';
+}
+
+.grey-bar {
+  background: #f7f7f7;
 }
 
 .main {
@@ -368,7 +372,12 @@ body {
         margin-bottom: 0.75rem;
 
         &:hover {
-          color: $white!important;
+          color: $white !important;
+          text-decoration: none !important;
+          background: #6e6e6e;
+        }
+        &:active {
+          color: $white !important;
           text-decoration: none !important;
           background: #6e6e6e;
         }
@@ -564,6 +573,11 @@ section.header {
     }
 
     &:hover {
+      color: $white !important;
+      text-decoration: none !important;
+      background: $grey;
+    }
+    &:active {
       color: $white !important;
       text-decoration: none !important;
       background: $grey;
@@ -1228,6 +1242,10 @@ section.dctsdk-work-flow {
       padding-left: 0 !important;
 
       &:hover {
+        color: $blue !important;
+        text-decoration: none !important;
+      }
+      &:active {
         color: $blue !important;
         text-decoration: none !important;
       }

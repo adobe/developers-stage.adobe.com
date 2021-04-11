@@ -234,6 +234,9 @@ section.sample-blade {
       &:hover {
         text-decoration: none !important;
       }
+      &:active {
+        text-decoration: none !important;
+      }
     }
   }
 
@@ -411,6 +414,9 @@ section.use-case-blade {
           &:hover {
             text-decoration: none !important;
           }
+          &:active {
+            text-decoration: none !important;
+          }
         }
       }
     }
@@ -503,6 +509,9 @@ section.key-features-blade {
             &:hover {
               text-decoration: none !important;
             }
+            &:active {
+              text-decoration: none !important;
+            }
           }
           // .case-icon {
           //   padding-top: 4.875rem;
@@ -548,6 +557,9 @@ section.key-features-blade {
           &:hover {
             text-decoration: none !important;
           }
+          &:active {
+            text-decoration: none !important;
+          }
           &.blue {
             background-color: #0e6de0;
             border-color: #0e6de0;
@@ -591,7 +603,6 @@ section.key-features-blade {
 section.get-started {
   margin: 0 !important;
   padding: 5rem 2rem;
-  background: #f7f7f7;
   text-align: left;
   @media screen and (min-width: 1024px) {
     max-width: none;
