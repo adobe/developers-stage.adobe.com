@@ -23,14 +23,16 @@ $baseurl: "{{ site.baseurl }}";
 @import "resources";
 @import "pricing";
 @import "doc-generation";
+@import "doc-extract";
 @import "api-use-cases";
+@import "gen-api-template";
 
 body {
   font-family: 'Adobe Clean';
 }
 
 .grey-bar {
-  background: #f7f7f7;
+  background: #f7f7f7 !important;
 }
 
 .main {
