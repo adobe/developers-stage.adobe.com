@@ -92,9 +92,19 @@ section.doc-gen-blade .cta-wrapper .button-link {
 
 .sub-nav-menu-item.get-started .spectrum-Button.spectrum-Button--cta {
 	margin-top: 20px;
+  margin-left: 1.5em;
 }
 
 .sub-nav-menu-wrapper .sub-nav .sub-nav-menu-item.get-started:hover {
   background: inherit;
 }
+
+@media screen and (max-width: 915px) {
+  .sub-nav-menu-wrapper.opened .sub-nav-menu-item.get-started .spectrum-Button.spectrum-Button--cta {
+	margin-left: 50px;
+	margin-bottom: 1.5em;
+  }
+}
+
+
 
