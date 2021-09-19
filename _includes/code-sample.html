@@ -62,7 +62,7 @@
 </p>
 
 
-<!-- CREATE -->
+<!-- CREATE PDF -->
 <p>
 <div id="create-code" class="sdk-embed-wrapper tab-container-embed spectrum spectrum--darkest code-window-opened">
 	<coral-tabview>
@@ -77,6 +77,30 @@
 			<coral-panel><pre><code class="language-javascript">{% include code-samples/create---node.txt %}</code></pre></coral-panel>
 			<coral-panel><pre><code class="language-clike">{% include code-samples/create---net.txt %}</code></pre></coral-panel>
 			<coral-panel><pre><code class="language-java">{% include code-samples/create---java.txt %}</code></pre></coral-panel>
+		</coral-panelstack>
+	</coral-tabview>
+</div>
+</p>
+
+<!-- HTML to PDF -->
+<p>
+<div id="html-to-pdf-code" class="sdk-embed-wrapper tab-container-embed spectrum spectrum--darkest code-window-opened">
+	<coral-tabview>
+		<coral-tablist size="S">
+			<coral-tab class="is-selected">REST API</coral-tab>
+{% comment %}
+				<coral-tab>Node.js</coral-tab>
+				<coral-tab>.Net</coral-tab>
+				<coral-tab>Java</coral-tab>
+{% endcomment %}
+		</coral-tablist>
+		<coral-panelstack>
+			<coral-panel><pre><code class="language-shell">{% include code-samples/html-to-pdf---rest-api.txt %}</code></pre></coral-panel>
+{% comment %}
+			<coral-panel><pre><code class="language-javascript">{% include code-samples/html-to-pdf---node.txt %}</code></pre></coral-panel>
+			<coral-panel><pre><code class="language-clike">{% include code-samples/html-to-pdf---net.txt %}</code></pre></coral-panel>
+			<coral-panel><pre><code class="language-java">{% include code-samples/html-to-pdf---java.txt %}</code></pre></coral-panel>
+{% endcomment %}
 		</coral-panelstack>
 	</coral-tabview>
 </div>
