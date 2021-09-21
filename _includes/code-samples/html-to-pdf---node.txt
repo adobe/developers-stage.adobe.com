@@ -1,0 +1,17 @@
+// Create an ExecutionContext using credentials and create a new operation instance
+const executionContext = PDFServicesSdk.ExecutionContext.create(credentials),
+    createPDF = PDFServicesSdk.CreatePDF,
+    htmlToPDFOperation = createPDF.Operation.createNew();
+
+// Set operation input from a source URL.
+const input = PDFServicesSdk.FileRef.createFromURL(
+    "https://www.adobe.io"
+);
+htmlToPDFOperation.setInput(input);
+
+// Provide any custom configuration options for the operation.
+setCustomOptions(htmlToPDFOperation);
+
+// Execute the operation and Save the result to the specified location.
+htmlToPDFOperation.execute(executionContext)
+    .then(result => result.saveAsFile('output/createPdfFromURLOutput.pdf'))
