@@ -1060,6 +1060,13 @@ section.dctsdk-work-flow {
     background-position: center center;
   }
 
+  .work-flow_menu ul li .html-to-pdf {
+    background-size: 24px 23px;
+    background-image: url("../svg/s_html-to-pdf.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
   .work-flow_menu ul li .embed {
     background-size: 26px 22px;
     background-image: url("../svg/menu-icons/embed.svg");
@@ -1418,7 +1425,7 @@ section.customer {
 /* customer logos end */
 /* dcs-help */
 section.dcs-help {
-  margin: 2rem 2.75rem 0;
+  margin: 2rem 2.75rem 4em 2.75rem;
   padding-bottom: 0.75rem;
 
   h3 {
