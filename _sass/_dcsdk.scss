@@ -125,3 +125,113 @@ section.dcs-help p {
 
 
 
+
+
+// liquid mode
+
+.main .dcsdk-liquid-mode {
+	background: linear-gradient(#e61305, #f18a72 65%);
+	margin: 0 !important;
+}
+
+.main .dcsdk-liquid-mode .content {
+	margin: 0 auto;
+	padding: 4em 2em;
+	max-width: 750px;
+	display: grid;
+	grid-template-columns: .4fr .6fr;
+	color: #fff;
+}
+
+.main .dcsdk-liquid-mode h2 {
+  color: #fff;
+  font-size: 2em;
+  margin-bottom: .25em;
+}
+.main .dcsdk-liquid-mode h4 {
+  color: #fff;
+}
+
+.main .dcsdk-liquid-mode h5 {
+  font-size: 1.5em;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1;
+}
+
+.main .dcsdk-liquid-mode video {
+  border-radius: 12px;
+}
+
+
+
+.main .dcsdk-liquid-mode .content div:nth-child(1) {
+	padding-right: 4em;
+  //max-width: 290px;
+}
+.main .dcsdk-liquid-mode .content div:nth-child(2) {
+}
+
+
+
+.main .dcsdk-liquid-mode .features {
+	display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2em;
+  row-gap: 3em;
+  margin-top: 2em;
+  margin-bottom: 4em;
+}
+.main .dcsdk-liquid-mode .features div {
+ border-left: 2px solid rgba(255,255,255,.5);
+  padding-left: 1em;
+}
+
+.main .dcsdk-liquid-mode .features p {
+  line-height: 1;
+  margin: 0;
+  color: rgba(255,255,255,.7);
+}
+
+.main .dcsdk-liquid-mode a.text-link {
+  color: #000;
+  text-decoration: underline;
+}
+
+
+@media screen and (max-width: 775px) {
+
+  .main .dcsdk-liquid-mode .content {
+	grid-template-columns: .4fr .6fr;
+  }
+
+  .main .dcsdk-liquid-mode .features {
+	display: block;
+  }
+  .main .dcsdk-liquid-mode .content div:nth-child(1) {
+	padding-right: 2em;
+  }
+  .main .dcsdk-liquid-mode .features div + div {
+	margin-top: 2em;
+  }
+
+}
+
+@media screen and (max-width: 450px) {
+
+  .main .dcsdk-liquid-mode .content {
+	display: block;
+  }
+  .main .dcsdk-liquid-mode video {
+	height: 300px;
+	margin-bottom: 2em;
+  }
+
+}
+
+
+
+
+
+
+

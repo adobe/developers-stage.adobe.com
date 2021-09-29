@@ -847,7 +847,12 @@ section.home-doc-serv-blade {
             }
           }
 
+		  ul {
+			padding-left: 0;
+		  }
+
           li {
+			margin-left: 1em;
             font-size: 1rem;
           }
 
