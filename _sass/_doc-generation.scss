@@ -118,7 +118,7 @@ section.doc-gen-blade {
             padding-top: 1.625rem;
             max-width: 248px;
             margin: 0 auto;
-            text-align: center;
+            text-align: left;
             @media screen and (min-width: 767px) {
               float: left;
               padding: 0 4rem 3.5rem 0;
@@ -127,6 +127,7 @@ section.doc-gen-blade {
               float: none;
               padding: 4.5rem 0 0;
             }
+
           }
 
           h4 {
