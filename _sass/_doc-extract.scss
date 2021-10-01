@@ -123,11 +123,11 @@ section.doc-ext-blade {
           .ext-icon {
             padding-top: 1.625rem;
             max-width: 248px;
-            margin: 0 auto;
+            margin: 0;
 
             @media screen and (min-width: 767px) {
-              float: left;
-              padding: 0 0 3.5rem 0;
+              float: none;
+              padding: 0;
             }
             @media screen and (min-width: 1024px) {
               float: none;
@@ -135,7 +135,7 @@ section.doc-ext-blade {
             }
             &.last {
               @media screen and (min-width: 767px) and (max-width: 1023px) {
-                padding: 0 4rem 0 0 0;
+                padding: 0;
               }
             }
           }
@@ -149,7 +149,7 @@ section.doc-ext-blade {
             h4 {
               font-family: 'Adobe Clean Bold';
               font-size: 1.375rem;
-              padding: 0 2rem;
+              padding: 0;
               text-transform: none;
               line-height: 1.8125rem;
               letter-spacing: 0.1px;
@@ -158,7 +158,7 @@ section.doc-ext-blade {
               }
               @media screen and (min-width: 1024px) {
 
-                padding: 0.625rem 0 0;
+                padding: 0;
               }
             }
           }
