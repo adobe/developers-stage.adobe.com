@@ -136,10 +136,10 @@ section.dcs-help p {
 
 .main .dcsdk-liquid-mode .content {
 	margin: 0 auto;
-	padding: 4em 2em;
-	max-width: 750px;
+	padding: 2.5em;
+	max-width: 1200px;
 	display: grid;
-	grid-template-columns: .4fr .6fr;
+	grid-template-columns: .25fr .75fr;
 	color: #fff;
 }
 
@@ -158,24 +158,25 @@ section.dcs-help p {
   margin: 0;
   line-height: 1;
 }
+.main .dcsdk-liquid-mode a {
+  font-size: 1rem;
+}
+.main .dcsdk-liquid-mode a.dcsdk-button.primary {
+	font-size: 1rem;
+}
 
 .main .dcsdk-liquid-mode video {
   border-radius: 12px;
 }
 
-
-
 .main .dcsdk-liquid-mode .content div:nth-child(1) {
-	padding-right: 4em;
-  //max-width: 290px;
+	padding-right: 2em;
 }
 .main .dcsdk-liquid-mode .content div:nth-child(2) {
 }
 
-
-
 .main .dcsdk-liquid-mode .features {
-	display: grid;
+  display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 2em;
   row-gap: 3em;
@@ -183,7 +184,7 @@ section.dcs-help p {
   margin-bottom: 4em;
 }
 .main .dcsdk-liquid-mode .features div {
- border-left: 2px solid rgba(255,255,255,.5);
+  border-left: 2px solid rgba(255,255,255,.35);
   padding-left: 1em;
 }
 
