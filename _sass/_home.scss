@@ -829,7 +829,7 @@ section.home-doc-serv-blade {
             line-height: 1.8125rem;
             letter-spacing: 0.1px;
             @media screen and (min-width: 1024px) {
-              text-align: center;
+              //text-align: center;
               padding: 0.625rem 0 0;
             }
           }
@@ -847,7 +847,12 @@ section.home-doc-serv-blade {
             }
           }
 
+		  ul {
+			padding-left: 0;
+		  }
+
           li {
+			margin-left: 1em;
             font-size: 1rem;
           }
 

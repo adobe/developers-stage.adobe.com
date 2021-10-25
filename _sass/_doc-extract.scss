@@ -118,27 +118,24 @@ section.doc-ext-blade {
         }
 
         .ext-item {
-          clear: both;
-          @media screen and (min-width: 1024px) {
-            max-width: 16.5rem;
-          }
+		  padding: 0 1em;
 
           .ext-icon {
             padding-top: 1.625rem;
             max-width: 248px;
-            margin: 0 auto;
-            text-align: center;
+            margin: 0;
+
             @media screen and (min-width: 767px) {
-              float: left;
-              padding: 0 4rem 3.5rem 0;
+              float: none;
+              padding: 0;
             }
             @media screen and (min-width: 1024px) {
               float: none;
-              padding: 4.5rem 0 0;
+              padding: 4.5rem 0 0 0;
             }
             &.last {
               @media screen and (min-width: 767px) and (max-width: 1023px) {
-                padding: 0 4rem 0 0;
+                padding: 0;
               }
             }
           }
@@ -146,16 +143,13 @@ section.doc-ext-blade {
           .ext-title {
             @media screen and (min-width: 1024px) {
               display: flex;
-              justify-content: center;
-              align-items: center;
               min-height: 4rem;
             }
   
             h4 {
-              text-align: center;
               font-family: 'Adobe Clean Bold';
               font-size: 1.375rem;
-              padding: 0 2rem;
+              padding: 0;
               text-transform: none;
               line-height: 1.8125rem;
               letter-spacing: 0.1px;
@@ -163,14 +157,13 @@ section.doc-ext-blade {
                 text-align: left;
               }
               @media screen and (min-width: 1024px) {
-                text-align: center;
-                padding: 0.625rem 0 0;
+
+                padding: 0;
               }
             }
           }
           
           p {
-            text-align: center;
             margin-bottom: 0;
             padding-top: 1.25rem;
             font-size: 1rem;
@@ -180,8 +173,6 @@ section.doc-ext-blade {
               text-align: left;
             }
             @media screen and (min-width: 1024px) {
-              text-align: center;
-              max-width: 13.8425rem;
               margin: 0 auto;
             }
           }

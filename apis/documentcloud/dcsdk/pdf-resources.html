@@ -13,7 +13,7 @@ redirect_from:
 
 	<div class="gradient">
 		<section class="header resource-header">
-			<h1>Developer Resources</h1>
+			<h1>Developer resources</h1>
 			<h2>Start integrating our APIs into your solutions</h2>
 		</section>
 		<section class="sdk-rsrc-release">
@@ -269,7 +269,6 @@ redirect_from:
 
 		<script src="{{ baseurl }}/gh-assets/js/rss.global.min.js"></script>
 		<script>
-
 			const rss = new RSS(
 				document.querySelector(".blog-wrapper"),
 				"https://medium.com/feed/adobetech/tagged/adobe-document-cloud",
@@ -287,23 +286,17 @@ redirect_from:
 					console.log(data.entries); // Returns the feed entries
 				})
 				.render();
-
 		</script>
 	</section>
 
 	<!-- stories -->
 	<section class="sdk-rsrc-stories" id="customer">
 		<div class="stories-container">
-			<h3>Customer Stories</h3>
+			<h3>Customer stories</h3>
 			<div class="headliner">
 				See how our customers are building great experiences and succeeding with Adobe
 			</div>
 			<div class="stories-wrapper">
-				{% comment %}
-				<div class="story-intro-text">
-					See how our customers are building great experiences and succeeding with Adobe
-				</div>
-				{% endcomment %}
 				<div class="customer">
 					<a href="javascript:openPdf('{{ baseurl }}/gh-assets/pdf/K2Nintex.pdf')">
 						<div class="logo">
@@ -346,6 +339,17 @@ redirect_from:
 					<div class="industry">Evisort</div>
 					<a href="javascript:openPdf('{{ baseurl }}/gh-assets/pdf/Evisort.pdf')">
 						<div class="profile">Evisort uses Adobe PDF Extract API to bring visibility and intelligence to contracts.</div>
+					</a>
+				</div>
+				<div class="customer">
+					<a href="javascript:openPdf('{{ baseurl }}/gh-assets/pdf/Waymark.pdf')">
+						<div class="logo">
+							<img src="{{ baseurl }}/gh-assets/img/customer-logos/Waymark.jpg" alt="Waymark workflows with Adobe PDF Extract API."/>
+						</div>
+					</a>
+					<div class="industry">Waymark</div>
+					<a href="javascript:openPdf('{{ baseurl }}/gh-assets/pdf/Evisort.pdf')">
+						<div class="profile">Waymark Tech enables rapid impact assessments and compliance workflows with Adobe PDF Extract API.</div>
 					</a>
 				</div>
 			</div>

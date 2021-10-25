@@ -200,7 +200,7 @@ section.sdk-pricing {
 
       .chk-lst-cta-wrapper {
         display: flex;
-        flex-direction: row;
+		text-align: center;
         margin-top: 2.5rem;
 
         &.cta-wrap-reset {
@@ -229,12 +229,12 @@ section.sdk-pricing {
           margin-top: 0.3125rem;
 
           .free-trial-btn {
-            border: none;
+            border: 2px solid #6E6E6E;
             border-radius: 16px;
             max-height: 32px;
             height: auto;
             min-width: 72px;
-            padding: 7px 14px;
+            padding: 5px 12px 8px 12px;
             // padding-bottom: 8px;
             // padding-top: 3.5px;
             font-size: 14px;
