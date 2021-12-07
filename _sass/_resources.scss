@@ -56,13 +56,13 @@ section.sdk-rsrc-release {
   margin: 4.375rem 2.75rem 0 2.75rem !important;
 
   .release-container {
-    max-width: 1280px;
+    max-width: 1060px;
     margin: 0 auto;
     min-height: 360px;
 
     .release-wrapper {
       display: flex;
-      flex-wrap: wrap;
+      //flex-wrap: wrap;
       margin-bottom: 4.0625rem;
       @media screen and (min-width: 1440px) {
         flex-direction: row;
@@ -206,8 +206,9 @@ section.sdk-rsrc-featured {
     }
     padding-top: 3.125rem !important;
     padding-bottom: 5.625rem;
+    max-width: 1060px;
     @media screen and (min-width: 1440px) {
-      max-width: 1280px;
+      max-width: 1060px;
       margin: 0 auto;
     }
 
@@ -323,7 +324,7 @@ section.sdk-rsrc-tutorial {
   margin-bottom: 0 !important;
 
   .tutorial-container {
-    max-width: 1280px;
+    max-width: 1060px;
     margin: 0 auto;
     padding-bottom: 6.25rem;
 
@@ -354,14 +355,14 @@ section.sdk-rsrc-tutorial {
       text-decoration: none;
 
       .tutorial {
-        width: 100%;
+		width: 25%;
         @media screen and (min-width: 767px) {
           margin-right: 2.5rem;
-          width: 47%;
+          //width: 47%;
 
-          &:nth-child(2n+2) {
-            margin-right: 0;
-          }
+          //&:nth-child(2n+2) {
+           // margin-right: 0;
+          //}
         }
         @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
           &:nth-child(2n+2) {
@@ -369,7 +370,7 @@ section.sdk-rsrc-tutorial {
           }
         }
         @media screen and (min-width: 1024px) {
-          width: 18.125rem;
+          //width: 18.125rem;
           margin-right: 2.5rem !important;
 
           &:nth-child(3n+3) {
@@ -377,14 +378,15 @@ section.sdk-rsrc-tutorial {
           }
         }
         @media screen and (min-width: 1440px) {
-          width: 18.125rem;
-          margin-right: 2.5rem !important;
+          //width: 18.125rem;
+          //margin-right: 2.5rem !important;
 
           &:nth-child(4n+4) {
-            margin-right: 0 !important;
+            //margin-right: 0 !important;
           }
         }
-        padding-top: 1.875rem;
+        //padding-top: 1.875rem;
+		margin-bottom: 1.8em;
 
         a {
           text-decoration: none !important;
@@ -392,10 +394,15 @@ section.sdk-rsrc-tutorial {
           div {
             width: 100%;
             @media screen and (min-width: 1440px) {
-              width: 290px;
+              //width: 290px;
             }
-            height: 160px;
+            //height: 160px;
 
+			&:before {
+			  content: '';
+			  padding-top: 55.17%;
+			  display: block;
+			}
             &.tut-thumb {
               background: url("../img/placeholder-tutorials.jpg");
               background-repeat: no-repeat;
@@ -441,7 +448,7 @@ section.sdk-rsrc-blog {
     display: block;
     position: relative;
     @media screen and (min-width: 1440px) {
-      max-width: 1280px;
+      max-width: 1060px;
     }
 
     .blog-wrapper {
@@ -545,7 +552,7 @@ section.sdk-rsrc-stories {
   margin-top: 0 !important;
 
   .stories-container {
-    max-width: 1280px;
+    max-width: 1060px;
     margin: 0 auto;
     padding-top: 3.75rem !important;
     padding-bottom: 5.625rem;
