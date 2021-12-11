@@ -37,11 +37,14 @@ redirect_from:
 			<div class="release-container">
 				<div class="release-wrapper">
 					<div class="release-wrapper-img">
-						<img src="{{ baseurl }}/gh-assets/img/placeholder-tutorials.jpg" alt="resource image" width="620" height="350"/>
+						<a href="https://www.youtube.com/watch?v=GCpSy78IDoE&list=PLcVEYUqU7VRc1ipQLtY1kcmpf9wiCgXZ5" target="_blank"><img src="{{ baseurl }}/gh-assets/img/document-services-overview.jpg" alt="Illustration"></a>
 					</div>
 					<div class="release-copy-wrapper">
 						<h3>Adobe Document Services - Overview</h3>
-						<p></p>
+						<p>Video overview of how Adobe Document Generation API, Adobe Sign API, PDF Services API, PDF Embed API, and PDF Extract API can help you automate document processes within your apps.</p>
+						<div class="release-cta">
+							<a href="https://www.youtube.com/watch?v=GCpSy78IDoE&list=PLcVEYUqU7VRc1ipQLtY1kcmpf9wiCgXZ5" target="_blank" class="button-link">Watch now</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -62,6 +65,7 @@ redirect_from:
 	</section>
 
 	<!-- featured -->
+	{% comment %}
 	<section class="sdk-rsrc-featured">
 		<div class="featured-container">
 			<h3>Featured</h3>
@@ -85,6 +89,36 @@ redirect_from:
 					<div class="featured-copy-wrapper">
 						<div class="featured-title">Tutorial</div>
 						<div class="featured-text">Loading the latest content for you...</div>
+					</div>
+				</a>
+			</div>
+		</div>
+	</section>
+	{% endcomment %}
+
+	<section class="sdk-rsrc-featured">
+		<div class="featured-container">
+			<h3>Featured</h3>
+			<div class="featured-wrapper">
+				<a href="https://medium.com/adobetech/make-pdfs-searchable-ocr-after-importing-into-sharepoint-1a8037744841" target="_blank">
+					<div class="featured-thumb" style="background-image: url(https://miro.medium.com/max/2000/1*jtBGYybaNL4eUFdWGKfQhg.png)"></div>
+					<div class="featured-copy-wrapper">
+						<div class="featured-title">Tutorial</div>
+						<div class="featured-text">Make PDFs Searchable (OCR) After Importing into SharePoint</div>
+					</div>
+				</a>
+				<a href="https://medium.com/adobetech/digging-out-data-with-adobe-pdf-extract-api-cf4b1712f05a" target="_blank">
+					<div class="featured-thumb" style="background-image: url(https://miro.medium.com/max/1400/0*wEiusXlHRz2gm6dj);"></div>
+					<div class="featured-copy-wrapper">
+						<div class="featured-title">Tutorial</div>
+						<div class="featured-text">Digging Out Data with Adobe PDF Extract API</div>
+					</div>
+				</a>
+				<a href="https://medium.com/adobetech/generate-documents-and-send-in-bulk-for-signature-in-microsoft-power-automate-807838092dcf" target="_blank">
+					<div class="featured-thumb" style="background-image: url({{ baseurl }}/gh-assets/img/generate-docs-for-bulk-esig.jpg)"></div>
+					<div class="featured-copy-wrapper">
+						<div class="featured-title">Tutorial</div>
+						<div class="featured-text">Generate Documents and Send in Bulk for E-Signature in Microsoft Power Automate</div>
 					</div>
 				</a>
 			</div>
@@ -209,6 +243,8 @@ redirect_from:
 					});
 			}
 
+			/*
+			*/
 			let dataStruct = {url: '', title: '', description: '', img: ''};
 
 			let heroData = {
@@ -230,8 +266,7 @@ redirect_from:
 					</div>`
 				}
 			};
-			renderData( heroData );
-
+			//renderData( heroData );
 			let featuredData = {
 				source: 'https://experienceleague.adobe.com/api/articles?Solution=Document%20Services&Tags=Featured&page_size=3',
 				data: dataStruct,
@@ -246,7 +281,7 @@ redirect_from:
 					</a>`
 				}
 			};
-			renderData( featuredData );
+			//renderData( featuredData );
 
 			let tutorialData = {
 				source: 'https://experienceleague.adobe.com/api/articles?Solution=Document%20Services&Tags=Tutorial&page_size=8',
