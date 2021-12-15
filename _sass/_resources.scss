@@ -678,3 +678,50 @@ section.sdk-rsrc-stories {
     }
   }
 }
+
+
+section.sdk-rsrc-release .release-container .release-wrapper .release-wrapper-img {
+  width: 50%;
+  margin-right: 2em;
+}
+section.sdk-rsrc-release .release-container .release-wrapper .release-copy-wrapper {
+  width: 50%;
+}
+
+
+#video-target .iframe_container {
+	width: 100%;
+  position: relative;
+}
+#video-target .iframe_container::before {
+  content: '';
+  display: block;
+  padding-top: 56.25%;
+}
+#video-target .iframe_container iframe {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@media screen and (max-width: 925px) {
+
+  section.sdk-rsrc-release .release-container .release-wrapper {
+	display: block;
+	margin: 0 auto;
+  }
+  section.sdk-rsrc-release .release-container .release-wrapper .release-wrapper-img {
+	width: 75%;
+	margin: 0 auto;
+  }
+  section.sdk-rsrc-release .release-container .release-wrapper .release-copy-wrapper {
+	width: 75%;
+	margin: 0 auto;
+  }
+
+}
+
+
+

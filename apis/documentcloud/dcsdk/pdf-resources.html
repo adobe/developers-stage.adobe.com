@@ -37,7 +37,13 @@ redirect_from:
 			<div class="release-container">
 				<div class="release-wrapper">
 					<div class="release-wrapper-img" id="video-target">
+						<div class="iframe_container">
+							<iframe src="https://www.youtube.com/embed/GCpSy78IDoE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+
+						{% comment %}
 						<a href="https://www.youtube.com/watch?v=GCpSy78IDoE&list=PLcVEYUqU7VRc1ipQLtY1kcmpf9wiCgXZ5" target="_blank"><img src="{{ baseurl }}/gh-assets/img/document-services-overview.jpg" alt="Illustration"></a>
+						{% endcomment %}
 					</div>
 					<div class="release-copy-wrapper">
 						<h3>Adobe Document Services - Overview</h3>
@@ -51,6 +57,7 @@ redirect_from:
 		</section>
 	</div>
 
+	{% comment %}
 	<script>
 
 		window.addEventListener('load', (event) => {
@@ -65,6 +72,7 @@ redirect_from:
 
 		});
 	</script>
+	{% endcomment %}
 
 	<!-- Little anchor nav strip -->
 	<section class="sdk-rsrc-anchor">
