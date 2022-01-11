@@ -36,20 +36,45 @@ redirect_from:
 		<section class="sdk-rsrc-release">
 			<div class="release-container">
 				<div class="release-wrapper">
-					<div class="release-wrapper-img">
+					<div class="release-wrapper-img" id="video-target">
+						<div class="iframe_container">
+							<iframe src="https://www.youtube.com/embed/GCpSy78IDoE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+
+						{% comment %}
 						<a href="https://www.youtube.com/watch?v=GCpSy78IDoE&list=PLcVEYUqU7VRc1ipQLtY1kcmpf9wiCgXZ5" target="_blank"><img src="{{ baseurl }}/gh-assets/img/document-services-overview.jpg" alt="Illustration"></a>
+						{% endcomment %}
 					</div>
 					<div class="release-copy-wrapper">
 						<h3>Adobe Document Services - Overview</h3>
 						<p>Video overview of how Adobe Document Generation API, Adobe Sign API, PDF Services API, PDF Embed API, and PDF Extract API can help you automate document processes within your apps.</p>
+						{% comment %}
 						<div class="release-cta">
-							<a href="https://www.youtube.com/watch?v=GCpSy78IDoE&list=PLcVEYUqU7VRc1ipQLtY1kcmpf9wiCgXZ5" target="_blank" class="button-link">Watch now</a>
+							<a href="#" class="button-link" id="inject-video">Watch now</a>
 						</div>
+						{% endcomment %}
 					</div>
 				</div>
 			</div>
 		</section>
 	</div>
+
+	{% comment %}
+	<script>
+
+		window.addEventListener('load', (event) => {
+
+			btn_video = document.getElementById('inject-video');
+			btn_video.addEventListener('click', function(e){
+				e.preventDefault();
+				video_element = document.getElementById('video-target');
+				markup = '<iframe width="560" height="315" src="https://www.youtube.com/embed/GCpSy78IDoE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+				video_element.innerHTML = markup;
+			})
+
+		});
+	</script>
+	{% endcomment %}
 
 	<!-- Little anchor nav strip -->
 	<section class="sdk-rsrc-anchor">
@@ -284,7 +309,7 @@ redirect_from:
 			//renderData( featuredData );
 
 			let tutorialData = {
-				source: 'https://experienceleague.adobe.com/api/articles?Solution=Document%20Services&Tags=Tutorial&page_size=8',
+				source: 'https://experienceleague.adobe.com/api/articles?Solution=Document%20Services&Tags=Tutorial&page_size=6',
 				data: dataStruct,
 				target: '.tutorial-wrapper',
 				markup() { return `
